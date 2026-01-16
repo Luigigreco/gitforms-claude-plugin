@@ -4,9 +4,6 @@
 
 Transform GitHub Issues into a powerful form backend without any infrastructure. Create forms, track leads, and analyze submissions directly from Claude Code.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Community Plugin](https://img.shields.io/badge/Plugin-Community-blue.svg)](https://github.com/Luigigreco/gitforms-claude-plugin)
-
 ## Features
 
 - 🆓 **Zero Cost** - No backend, no servers, just GitHub
@@ -16,72 +13,27 @@ Transform GitHub Issues into a powerful form backend without any infrastructure.
 - 🔒 **Secure** - Server-side validation, spam protection
 - 📈 **Scalable** - Handle thousands of submissions
 
-## Installation
+## Quick Start
 
-### Method 1: Direct Installation (Recommended)
+### Installation
 
 ```bash
-# In Claude Code CLI
-/plugin add Luigigreco/gitforms-claude-plugin
 /plugin install gitforms
 ```
 
-### Method 2: From Source
+### Configuration
 
 ```bash
-# Clone repository
-git clone https://github.com/Luigigreco/gitforms-claude-plugin.git ~/.claude/plugins/gitforms
-
-# Restart Claude Code
+/settings gitforms_repo owner/repo-name
 ```
 
-### Verify Installation
-
-```bash
-/plugin list
-# Should show: gitforms v1.0.0
-```
-
-## Quick Start
-
-### 1. Configure Repository
-
-```bash
-/settings gitforms_repo your-username/your-repo-name
-```
-
-Example:
-```bash
-/settings gitforms_repo Luigigreco/contact-submissions
-```
-
-### 2. Create Your First Form
+### Create Your First Form
 
 ```bash
 /create-form contact name,email,message
 ```
 
-This generates:
-- ✅ HTML form ready to embed
-- ✅ GitHub Issues backend
-- ✅ Automated workflows
-- ✅ Spam protection
-
-### 3. Test It
-
-Copy the generated HTML to your website and submit a test form.
-
-### 4. View Submissions
-
-```bash
-/list-contacts
-```
-
-### 5. Analyze Leads
-
-```bash
-/analyze-leads
-```
+That's it! Your form is ready to accept submissions.
 
 ## Commands
 
@@ -285,39 +237,36 @@ fetch('https://gitforms.io/submit/yourname/contact-repo', {
 - GitHub account with repo access
 - GitHub Actions enabled on target repository
 
-## Troubleshooting
+## Installation
 
-### Plugin Not Loading?
-
+### From Marketplace
 ```bash
-# Reload plugin
-/plugin reload gitforms
-
-# Check installation
-/plugin list
+/plugin install gitforms
 ```
 
-### Form Not Saving Submissions?
+### From GitHub
+```bash
+/plugin add Luigigreco/gitforms-claude-plugin
+/plugin install gitforms
+```
 
-1. Verify repository configuration:
-   ```bash
-   /settings get gitforms_repo
-   ```
+## Configuration
 
-2. Check GitHub Actions are enabled on your repository
+Required settings:
+```bash
+/settings gitforms_repo owner/repo-name
+```
 
-3. Verify GitHub token has `repo` scope:
-   ```bash
-   gh auth login --scopes repo
-   ```
-
-For more issues, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
+Optional settings:
+```bash
+/settings gitforms_branch main  # Default branch
+```
 
 ## Support
 
 - **Issues:** https://github.com/Luigigreco/gitforms-claude-plugin/issues
 - **Discussions:** https://github.com/Luigigreco/gitforms-claude-plugin/discussions
-- **Email:** luigi.greco@proton.me
+- **Email:** l.greco77@gmail.com
 
 ## Roadmap
 
@@ -333,12 +282,7 @@ For more issues, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
 
 ## Contributing
 
-Contributions welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
@@ -347,12 +291,10 @@ MIT License - see [LICENSE](LICENSE) for details.
 ## Author
 
 **Luigi Greco**
-- Email: luigi.greco@proton.me
+- Email: l.greco77@gmail.com
 - GitHub: [@Luigigreco](https://github.com/Luigigreco)
 - Original Project: [GitForms](https://github.com/Luigigreco/gitforms)
 
 ---
-
-**⭐ Star this repo if you find it useful!**
 
 **Transform GitHub Issues into a powerful form backend. Zero cost. Zero infrastructure. Maximum flexibility.**
