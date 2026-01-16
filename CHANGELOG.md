@@ -83,4 +83,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 **Installation:** `/plugin install gitforms`
 **Repository:** https://github.com/Luigigreco/gitforms-claude-plugin
 **Issues:** https://github.com/Luigigreco/gitforms-claude-plugin/issues
-**Author:** Luigi Greco (luigi.greco@proton.me)
+**Author:** Luigi Greco (l.greco77@gmail.com)
