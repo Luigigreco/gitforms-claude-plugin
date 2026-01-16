@@ -266,7 +266,7 @@ https://github.com/Luigigreco/gitforms-claude-plugin/issues
 - Discord: discord.gg/gitforms
 
 ### Contact Developer
-luigi.greco@proton.me
+l.greco77@gmail.com
 
 ## Common Workarounds
 
