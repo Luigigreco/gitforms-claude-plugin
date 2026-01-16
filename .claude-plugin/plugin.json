@@ -1,0 +1,50 @@
+{
+  "name": "gitforms-assistant",
+  "version": "1.0.0",
+  "description": "Zero-cost contact forms using GitHub Issues as database. Create forms, track leads, and analyze submissions without backend infrastructure.",
+  "author": {
+    "name": "Luigi Greco",
+    "email": "luigi.greco@proton.me"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Luigigreco/gitforms",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Luigigreco/gitforms-claude-plugin"
+  },
+  "bugs": {
+    "url": "https://github.com/Luigigreco/gitforms-claude-plugin/issues"
+  },
+  "keywords": [
+    "gitforms",
+    "forms",
+    "lead-generation",
+    "contacts",
+    "git-backend",
+    "serverless",
+    "zero-cost",
+    "github-issues"
+  ],
+  "category": "productivity",
+  "pricing": "free",
+  "screenshots": [
+    "https://raw.githubusercontent.com/Luigigreco/gitforms/main/screenshots/form-creation.png",
+    "https://raw.githubusercontent.com/Luigigreco/gitforms/main/screenshots/contact-management.png",
+    "https://raw.githubusercontent.com/Luigigreco/gitforms/main/screenshots/lead-analysis.png"
+  ],
+  "configuration": {
+    "gitforms_repo": {
+      "type": "string",
+      "description": "GitHub repository for form submissions (format: owner/repo)",
+      "required": true,
+      "default": "",
+      "example": "Luigigreco/contact-submissions"
+    },
+    "gitforms_branch": {
+      "type": "string",
+      "description": "Branch to use for submissions",
+      "required": false,
+      "default": "main"
+    }
+  }
+}
