@@ -134,7 +134,7 @@ if (!userHasAuthorizedRepo(repo)) {
 If you discover a security vulnerability, please:
 
 1. **DO NOT** open a public GitHub issue
-2. Email: luigi.greco@proton.me with subject "SECURITY: GitForms Plugin"
+2. Email: l.greco77@gmail.com with subject "SECURITY: GitForms Plugin"
 3. Include:
    - Description of the vulnerability
    - Steps to reproduce
@@ -210,4 +210,4 @@ None yet (initial release)
 
 **Last Updated:** 2026-01-16
 **Version:** 1.0.0
-**Contact:** luigi.greco@proton.me
+**Contact:** l.greco77@gmail.com
