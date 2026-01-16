@@ -184,12 +184,12 @@ Plugin is not directed at children under 13. We do not knowingly collect data fr
 ## 📧 Contact Information
 
 ### Privacy Questions
-**Email:** luigi.greco@proton.me
+**Email:** l.greco77@gmail.com
 **Subject:** "PRIVACY: GitForms Plugin"
 
 ### Data Subject Requests
 For GDPR/privacy requests (access, deletion, correction):
-1. Email luigi.greco@proton.me
+1. Email l.greco77@gmail.com
 2. Include: Request type, repository name, timeline
 3. Response within 30 days
 
@@ -228,7 +228,7 @@ For GDPR/privacy requests (access, deletion, correction):
 
 **Last Updated:** 2026-01-16
 **Version:** 1.0.0
-**Contact:** luigi.greco@proton.me
+**Contact:** l.greco77@gmail.com
 
 **This privacy policy complies with:**
 - GDPR (General Data Protection Regulation)
