@@ -8,7 +8,7 @@
 |---------|----------|----------|
 | **Price** | 100% Free | From $25/mo |
 | **Privacy** | Zero tracking | Heavy analytics |
-| **Open Source** | MIT License | Closed source |
+| **Open Source** | CC BY-NC-SA 4.0 | Closed source |
 | **Self-Hosted** | Your GitHub | Their servers |
 | **Branding** | No branding | Branding on free |
 | **MCP Server** | Official | None |
