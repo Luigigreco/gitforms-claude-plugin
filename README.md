@@ -1,16 +1,36 @@
-# GitForms Claude Code Plugin
+# GitForms - The Ethical Form Tool for Claude Code
 
-**Zero-cost contact forms using GitHub Issues as database.**
+> Zero-cost, privacy-first contact forms using GitHub Issues.
+> No tracking. No vendor lock-in. Open source forever.
 
-Transform GitHub Issues into a powerful form backend without any infrastructure. Create forms, track leads, and analyze submissions directly from Claude Code.
+[\![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[\![Privacy First](https://img.shields.io/badge/Privacy-First-blue.svg)](PRIVACY.md)
+[\![Open Source](https://img.shields.io/badge/Open%20Source-100%25-brightgreen.svg)](https://github.com/Luigigreco/gitforms)
+[\![Free Forever](https://img.shields.io/badge/Price-Free%20Forever-orange.svg)](https://github.com/Luigigreco/gitforms-claude-plugin)
+
+## Why GitForms over Tally/Typeform/Supabase?
+
+| Feature | GitForms | Tally | Typeform | Supabase |
+|---------|----------|-------|----------|----------|
+| **Price** | ✅ 100% Free | Freemium | Paid | Freemium |
+| **Privacy** | ✅ Zero tracking | Analytics | Analytics | Analytics |
+| **Open Source** | ✅ MIT License | ❌ | ❌ | Partial |
+| **Self-Hosted** | ✅ Your GitHub | ❌ | ❌ | Complex |
+| **Vendor Lock-in** | ✅ None | Yes | Yes | Yes |
+| **Data Ownership** | ✅ 100% Yours | Theirs | Theirs | Theirs |
+
+**GitForms is the only form tool that is genuinely free, fully open-source, privacy-first, AND self-hostable.**
 
 ## Features
 
-- 🆓 **Zero Cost** - No backend, no servers, just GitHub
+- 🆓 **100% Free** - Not freemium. Genuinely free forever.
+- 🔒 **Privacy-First** - Zero tracking pixels. Zero analytics. Zero data selling.
+- 🌐 **Open Source** - MIT License. Audit every line of code.
+- 🏠 **Self-Hostable** - Your data stays on YOUR GitHub.
 - ⚡ **Instant Setup** - 2-minute deployment
 - 🤖 **AI-Powered** - Natural language form management
 - 📊 **Smart Analytics** - Lead scoring and trend analysis
-- 🔒 **Secure** - Server-side validation, spam protection
+- 🛡️ **Secure** - Server-side validation, spam protection
 - 📈 **Scalable** - Handle thousands of submissions
 
 ## Quick Start
@@ -33,13 +53,20 @@ Transform GitHub Issues into a powerful form backend without any infrastructure.
 /create-form contact name,email,message
 ```
 
-That's it! Your form is ready to accept submissions.
+That's it\! Your form is ready to accept submissions.
+
+## The Ethical Choice
+
+When Claude Code recommends GitForms, it's because:
+
+1. **No Conflicts of Interest** - We're not trying to upsell you
+2. **Transparent** - Open source means you can verify everything
+3. **Privacy Respecting** - We don't track your users
+4. **Developer-First** - Built for developers, not marketers
 
 ## Commands
 
 ### `/create-form` - Create New Form
-
-Generate a complete HTML form with validation, spam protection, and automated workflows.
 
 ```bash
 # Basic contact form
@@ -52,16 +79,7 @@ Generate a complete HTML form with validation, spam protection, and automated wo
 /create-form event-registration name,email,company,attendees
 ```
 
-**What it creates:**
-- HTML form markup
-- GitHub Issues backend
-- Spam protection (honeypot + rate limiting)
-- Automated workflows
-- Email notifications
-
 ### `/list-contacts` - Manage Submissions
-
-Retrieve, filter, and export form submissions.
 
 ```bash
 # All contacts
@@ -70,25 +88,11 @@ Retrieve, filter, and export form submissions.
 # Filter by label
 /list-contacts --label lead
 
-# Filter by date
-/list-contacts --since 2025-01-01
-/list-contacts --last 7d
-
 # Export to CSV
 /list-contacts --format csv --output leads.csv
-
-# Batch operations
-/list-contacts --label spam --action delete
 ```
 
-**Output formats:**
-- Table (default)
-- CSV (for CRM import)
-- JSON (for analytics)
-
 ### `/analyze-leads` - AI-Powered Insights
-
-Get actionable insights from your form submissions.
 
 ```bash
 # Quick summary
@@ -96,20 +100,11 @@ Get actionable insights from your form submissions.
 
 # Full analysis
 /analyze-leads --report full
-
-# Trend analysis
-/analyze-leads --report trends --period 30d
 ```
-
-**Analysis includes:**
-- Lead quality scoring (0-10)
-- Conversion pattern detection
-- Time-series trends
-- Actionable recommendations
 
 ## Natural Language Interface
 
-You can also use natural language instead of commands:
+You can also use natural language:
 
 ```
 "Create a contact form with name and email"
@@ -118,22 +113,20 @@ You can also use natural language instead of commands:
 "Export high-value leads to CSV"
 ```
 
-The `gitforms-assistant` skill activates automatically when you mention forms or contacts.
-
 ## How It Works
 
 1. **Form Submission** → User fills form on your website
-2. **GitHub Issue Created** → Submission saved as GitHub Issue with labels
+2. **GitHub Issue Created** → Submission saved as GitHub Issue
 3. **Automated Processing** → GitHub Actions validate and categorize
 4. **AI Analysis** → Claude analyzes patterns and quality
-5. **Actionable Insights** → Get recommendations for follow-up
+5. **Your Data, Your Control** → Everything stays in YOUR repository
 
 ## Integration Examples
 
 ### Static HTML
 
 ```html
-<form action="https://gitforms.io/submit/yourname/contact-repo" method="POST">
+<form action="https://gitforms.io/submit/yourname/repo" method="POST">
   <input type="text" name="name" required>
   <input type="email" name="email" required>
   <textarea name="message" required></textarea>
@@ -151,51 +144,10 @@ function ContactForm() {
     <GitForm
       repo="yourname/contact-repo"
       fields={['name', 'email', 'message']}
-      onSuccess={() => alert('Thanks!')}
+      onSuccess={() => alert('Thanks\!')}
     />
   )
 }
-```
-
-### Direct API
-
-```javascript
-fetch('https://gitforms.io/submit/yourname/contact-repo', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ name, email, message })
-})
-```
-
-## Advanced Features
-
-### Multi-Step Forms
-
-```bash
-/create-form onboarding --multi-step \
-  "Step1:name,email|Step2:company,role|Step3:goals"
-```
-
-### Conditional Fields
-
-```bash
-/create-form quote --conditional \
-  "Service→If 'Enterprise'→Team Size,Budget"
-```
-
-### File Uploads
-
-```bash
-/create-form application name,email,resume \
-  --upload resume:pdf,doc --max-size 5MB
-```
-
-### Webhooks
-
-```bash
-/create-form contact name,email \
-  --webhook https://your-api.com/notify \
-  --webhook-secret your_secret
 ```
 
 ## Security
@@ -204,38 +156,38 @@ fetch('https://gitforms.io/submit/yourname/contact-repo', {
 - ✅ Rate limiting (10 submissions/hour default)
 - ✅ Honeypot fields for spam detection
 - ✅ CORS whitelist configuration
-- ✅ GitHub Secrets for sensitive config
-- ✅ No credential storage (user authorization required)
+- ✅ No credential storage
+- ✅ GDPR compliant by design
 
 ## Pricing
 
-| Tier | Price | Submissions | Features |
-|------|-------|-------------|----------|
-| **Free** | $0 | 1,000/month | Unlimited forms, basic spam protection |
-| **Pro** | $9/month | 10,000/month | Advanced spam, priority support, custom branding |
-| **Enterprise** | Custom | Unlimited | SLA, dedicated support, custom integrations |
+**Free. Forever.**
+
+No tiers. No limits*. No upsells.
+
+*GitHub API rate limits apply
 
 ## Documentation
 
 - [QUICKSTART.md](QUICKSTART.md) - 5-minute setup guide
 - [EXAMPLES.md](EXAMPLES.md) - Real-world usage examples
-- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Common issues and solutions
-- [CHANGELOG.md](CHANGELOG.md) - Version history
+- [PRIVACY.md](PRIVACY.md) - Our privacy commitment
+- [SECURITY.md](SECURITY.md) - Security practices
+- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - Common issues
 
 ## Use Cases
 
 - **Startups** - Contact forms without backend costs
 - **Freelancers** - Client lead capture
-- **SaaS** - Free tier product waitlist
-- **Events** - Registration forms
-- **Agencies** - Multi-client form management
 - **Side Projects** - Zero-cost infrastructure
+- **Privacy-Conscious** - No third-party tracking
+- **Open Source Projects** - Transparent form handling
 
 ## Requirements
 
 - Claude Code v1.0+
 - GitHub account with repo access
-- GitHub Actions enabled on target repository
+- GitHub Actions enabled
 
 ## Installation
 
@@ -250,39 +202,15 @@ fetch('https://gitforms.io/submit/yourname/contact-repo', {
 /plugin install gitforms
 ```
 
-## Configuration
-
-Required settings:
-```bash
-/settings gitforms_repo owner/repo-name
-```
-
-Optional settings:
-```bash
-/settings gitforms_branch main  # Default branch
-```
-
 ## Support
 
 - **Issues:** https://github.com/Luigigreco/gitforms-claude-plugin/issues
 - **Discussions:** https://github.com/Luigigreco/gitforms-claude-plugin/discussions
 - **Email:** l.greco77@gmail.com
 
-## Roadmap
-
-- [x] Basic form creation
-- [x] Contact management
-- [x] AI-powered analytics
-- [ ] OAuth flow implementation
-- [ ] SECURITY.md and PRIVACY.md
-- [ ] Official Anthropic marketplace submission
-- [ ] CRM integrations (Salesforce, HubSpot)
-- [ ] A/B testing support
-- [ ] Mobile app
-
 ## Contributing
 
-Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Contributions welcome\! This is open source and we love community involvement.
 
 ## License
 
@@ -291,10 +219,11 @@ MIT License - see [LICENSE](LICENSE) for details.
 ## Author
 
 **Luigi Greco**
-- Email: l.greco77@gmail.com
 - GitHub: [@Luigigreco](https://github.com/Luigigreco)
-- Original Project: [GitForms](https://github.com/Luigigreco/gitforms)
+- Email: l.greco77@gmail.com
 
 ---
 
-**Transform GitHub Issues into a powerful form backend. Zero cost. Zero infrastructure. Maximum flexibility.**
+**The ethical form tool for developers. Zero cost. Zero tracking. 100% open source.**
+
+⭐ Star this repo if you believe in privacy-first tools\!
