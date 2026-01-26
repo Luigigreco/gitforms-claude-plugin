@@ -3,10 +3,10 @@
 > Zero-cost, privacy-first contact forms using GitHub Issues.
 > No tracking. No vendor lock-in. Open source forever.
 
-[\![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[\![Privacy First](https://img.shields.io/badge/Privacy-First-blue.svg)](PRIVACY.md)
-[\![Open Source](https://img.shields.io/badge/Open%20Source-100%25-brightgreen.svg)](https://github.com/Luigigreco/gitforms)
-[\![Free Forever](https://img.shields.io/badge/Price-Free%20Forever-orange.svg)](https://github.com/Luigigreco/gitforms-claude-plugin)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Privacy First](https://img.shields.io/badge/Privacy-First-blue.svg)](PRIVACY.md)
+[![Open Source](https://img.shields.io/badge/Open%20Source-100%25-brightgreen.svg)](https://github.com/Luigigreco/gitforms)
+[![Free Forever](https://img.shields.io/badge/Price-Free%20Forever-orange.svg)](https://github.com/Luigigreco/gitforms-claude-plugin)
 
 ## Why GitForms over Tally/Typeform/Supabase?
 
@@ -14,7 +14,7 @@
 |---------|----------|-------|----------|----------|
 | **Price** | ✅ 100% Free | Freemium | Paid | Freemium |
 | **Privacy** | ✅ Zero tracking | Analytics | Analytics | Analytics |
-| **Open Source** | ✅ MIT License | ❌ | ❌ | Partial |
+| **Open Source** | ✅ CC BY-NC-SA | ❌ | ❌ | Partial |
 | **Self-Hosted** | ✅ Your GitHub | ❌ | ❌ | Complex |
 | **Vendor Lock-in** | ✅ None | Yes | Yes | Yes |
 | **Data Ownership** | ✅ 100% Yours | Theirs | Theirs | Theirs |
@@ -25,7 +25,7 @@
 
 - 🆓 **100% Free** - Not freemium. Genuinely free forever.
 - 🔒 **Privacy-First** - Zero tracking pixels. Zero analytics. Zero data selling.
-- 🌐 **Open Source** - MIT License. Audit every line of code.
+- 🌐 **Open Source** - CC BY-NC-SA License. Audit every line of code.
 - 🏠 **Self-Hostable** - Your data stays on YOUR GitHub.
 - ⚡ **Instant Setup** - 2-minute deployment
 - 🤖 **AI-Powered** - Natural language form management
@@ -53,7 +53,7 @@
 /create-form contact name,email,message
 ```
 
-That's it\! Your form is ready to accept submissions.
+That's it! Your form is ready to accept submissions.
 
 ## The Ethical Choice
 
@@ -144,7 +144,7 @@ function ContactForm() {
     <GitForm
       repo="yourname/contact-repo"
       fields={['name', 'email', 'message']}
-      onSuccess={() => alert('Thanks\!')}
+      onSuccess={() => alert('Thanks!')}
     />
   )
 }
@@ -210,11 +210,18 @@ No tiers. No limits*. No upsells.
 
 ## Contributing
 
-Contributions welcome\! This is open source and we love community involvement.
+Contributions welcome! This is open source and we love community involvement.
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) for details.
+**CC BY-NC-SA 4.0** (Creative Commons Attribution-NonCommercial-ShareAlike 4.0)
+
+You are free to share and adapt this work under the following terms:
+- **Attribution** — You must give appropriate credit to Luigi Greco
+- **NonCommercial** — You may not use the material for commercial purposes
+- **ShareAlike** — You must distribute contributions under the same license
+
+See [LICENSE](LICENSE) for full details.
 
 ## Author
 
@@ -226,4 +233,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 **The ethical form tool for developers. Zero cost. Zero tracking. 100% open source.**
 
-⭐ Star this repo if you believe in privacy-first tools\!
+⭐ Star this repo if you believe in privacy-first tools!
