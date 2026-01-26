@@ -8,7 +8,7 @@
 |---------|----------|-------|
 | **Price** | 100% Free | Freemium ($29/mo Pro) |
 | **Privacy** | Zero tracking | Analytics and cookies |
-| **Open Source** | MIT License | Closed source |
+| **Open Source** | CC BY-NC-SA 4.0 | Closed source |
 | **Self-Hosted** | Your GitHub | Their servers |
 | **Data Ownership** | 100% yours | Their database |
 | **MCP Server** | Official | Third-party only |
