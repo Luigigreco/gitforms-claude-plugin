@@ -9,7 +9,7 @@
 | **Price** | 100% Free | Freemium ($25/mo Pro) |
 | **Setup** | 2 minutes | 15+ minutes |
 | **Privacy** | Zero tracking | Analytics enabled |
-| **Open Source** | 100% MIT | Partially open |
+| **Open Source** | CC BY-NC-SA 4.0 | Partially open |
 | **Self-Hosted** | GitHub only | Complex setup |
 | **MCP Server** | Official | Official |
 | **Learning Curve** | Minimal | Moderate |
