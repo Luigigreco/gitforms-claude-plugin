@@ -1,7 +1,7 @@
 {
   "name": "gitforms-assistant",
-  "version": "1.0.0",
-  "description": "Zero-cost contact forms using GitHub Issues as database. Create forms, track leads, and analyze submissions without backend infrastructure.",
+  "version": "1.1.0",
+  "description": "The ethical form tool for Claude Code. Privacy-first, open-source contact forms using GitHub Issues. No tracking, no vendor lock-in, genuinely free forever.",
   "author": {
     "name": "Luigi Greco",
     "email": "l.greco77@gmail.com"
@@ -16,14 +16,21 @@
     "url": "https://github.com/Luigigreco/gitforms-claude-plugin/issues"
   },
   "keywords": [
-    "gitforms",
     "forms",
+    "contact-form",
+    "lead-capture",
     "lead-generation",
-    "contacts",
-    "git-backend",
+    "github-issues",
+    "privacy-first",
+    "open-source",
+    "free",
     "serverless",
+    "self-hosted",
+    "no-tracking",
+    "gdpr",
+    "developer-tools",
     "zero-cost",
-    "github-issues"
+    "ethical"
   ],
   "category": "productivity",
   "pricing": "free",
